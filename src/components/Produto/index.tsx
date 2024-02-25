@@ -1,16 +1,13 @@
 import { Game } from '../../App'
 import * as S from './styles'
-
 type Props = {
   game: Game
   aoComprar: (jogo: Game) => void
 }
-
 export const paraReal = (valor: number) =>
   new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(
     valor
   )
-
 const Produto = ({ game, aoComprar }: Props) => {
   return (
     <S.Produto>
@@ -34,5 +31,4 @@ const Produto = ({ game, aoComprar }: Props) => {
     </S.Produto>
   )
 }
-
 export default Produto

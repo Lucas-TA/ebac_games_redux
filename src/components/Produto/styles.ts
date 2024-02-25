@@ -1,37 +1,28 @@
 import styled from 'styled-components'
-
 import { cores } from '../../styles'
-
 export const Produto = styled.div``
-
 export const Titulo = styled.h3``
-
 export const Capa = styled.div`
   position: relative;
-
   img {
     display: block;
     width: 100%;
     margin-bottom: 8px;
   }
 `
-
 export const Prices = styled.div`
   margin: 16px 0;
   color: #fff;
-
   small {
     font-size: 16px;
     text-decoration: line-through;
     margin-right: 8px;
     opacity: 0.7;
   }
-
   strong {
     font-size: 18px;
   }
 `
-
 export const Tag = styled.span`
   background-color: ${cores.corPrincipal};
   position: absolute;
@@ -46,7 +37,6 @@ export const Plataformas = styled.ul`
   display: flex;
   flex-wrap: wrap;
   margin: 8px 0 0;
-
   li {
     background-color: ${cores.corPrincipal};
     padding: 8px;
@@ -74,7 +64,6 @@ export const BtnComprar = styled.button`
   border: none;
   cursor: pointer;
   border-radius: 4px;
-
   &:hover {
     background-image: linear-gradient(
       -45deg,

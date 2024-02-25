@@ -1,13 +1,10 @@
 import { Game } from '../App'
 import Produto from '../components/Produto'
-
 import * as S from './styles'
-
 type Props = {
   jogos: Game[]
   adicionarAoCarrinho: (jogo: Game) => void
 }
-
 const Produtos = ({ jogos, adicionarAoCarrinho }: Props) => {
   return (
     <>
@@ -19,5 +16,4 @@ const Produtos = ({ jogos, adicionarAoCarrinho }: Props) => {
     </>
   )
 }
-
 export default Produtos
